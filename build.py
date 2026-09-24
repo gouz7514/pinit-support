@@ -51,8 +51,8 @@ def render(part, anchor):
     return "\n".join(h)
 
 PAGES = [
-    ("support.md", "index.html", "pinit 지원 · Support", "pinit 앱 사용 중 자주 묻는 질문과 문의처 · FAQ and contact for pinit"),
-    ("privacy.md", "privacy.html", "pinit 개인정보 처리방침 · Privacy Policy", "pinit은 개인정보를 수집하지 않습니다 · pinit does not collect any personal data"),
+    ("support.md", "index.html", "Pinit 지원 · Support", "Pinit 앱 사용 중 자주 묻는 질문과 문의처 · FAQ and contact for Pinit"),
+    ("privacy.md", "privacy.html", "Pinit 개인정보 처리방침 · Privacy Policy", "Pinit은 개인정보를 수집하지 않습니다 · Pinit does not collect any personal data"),
 ]
 for md, out, title, desc in PAGES:
     ko, en = open(SRC / md).read().split("\n---\n")
@@ -73,7 +73,7 @@ for md, out, title, desc in PAGES:
 <body>
 <header><div class="wrap">
 <img src="logo.png" alt="">
-<span class="name">pinit</span>
+<span class="name">Pinit</span>
 <nav>{nav}</nav>
 </div></header>
 <main class="wrap">
@@ -84,7 +84,7 @@ for md, out, title, desc in PAGES:
 {render(en, "en")}
 </div>
 </main>
-<footer>© 2026 pinit</footer>
+<footer>© 2026 Pinit</footer>
 </body>
 </html>
 """
